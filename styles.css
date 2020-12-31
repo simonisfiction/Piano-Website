@@ -1,0 +1,45 @@
+/**************** normal tags*****************/
+body {
+    background-color: gray;
+    position: relative;
+
+}
+
+
+
+/**************** classes ******************/
+#c {
+    display: inline-block;
+    background-color: white;
+    height: 400px;
+    width: 50px;
+    position: absolute;
+}
+#d {
+    display: inline-block;
+    background-color: white;
+    height: 400px;
+    width: 50px;
+    position: absolute;
+    left: 55px;
+}
+#e {
+    display: inline-block;
+    background-color: white;
+    height: 400px;
+    width: 50px;
+    position: absolute;
+    left: 110px;
+}
+#f {
+    display: inline-block;
+    background-color: white;
+    height: 400px;
+    width: 50px;
+    position: absolute;
+    left: 165px;
+     
+} 
+
+
+/****************    ids    ******************/
