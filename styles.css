@@ -55,6 +55,10 @@ nav-item {
 }
 
 /****************    ids    ******************/
+#keyboard {
+    background-color: black;
+    
+}
 #c {
     left: 0;
 }
