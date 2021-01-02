@@ -2,44 +2,66 @@
 body {
     background-color: gray;
     position: relative;
-
+    margin: 0;
 }
 
 
 
 /**************** classes ******************/
-#c {
-    display: inline-block;
+.white {
     background-color: white;
     height: 400px;
     width: 50px;
-    position: absolute;
 }
-#d {
-    display: inline-block;
-    background-color: white;
-    height: 400px;
-    width: 50px;
-    position: absolute;
-    left: 55px;
+.black {
+    background-color: black;
+    height: 250px;
+    width: 35px;
 }
-#e {
-    display: inline-block;
-    background-color: white;
-    height: 400px;
-    width: 50px;
+.key {
     position: absolute;
-    left: 110px;
+    display: inline-block;
 }
-#f {
-    display: inline-block;
-    background-color: white;
-    height: 400px;
-    width: 50px;
-    position: absolute;
-    left: 165px;
-     
-} 
 
 
 /****************    ids    ******************/
+#c {
+    left: 0;
+}
+#d {
+    left: 55px;
+}
+#e {
+    left: 110px;
+}
+#f {
+    left: 165px;
+} 
+#g {
+    left: 220px;
+}
+#a {
+    left: 275px;
+}
+#b {
+    left: 330px;
+}
+
+     
+} 
+/*************** black keys ***************/
+#cs {
+    left: 35;
+}
+#ds {
+    left: 88px;
+}
+#fs {
+    left: 198px;
+}
+#gs {
+    left: 253px;
+}
+#as {
+    left: 308px;
+}
