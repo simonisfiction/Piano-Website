@@ -1,6 +1,6 @@
 /**************** normal tags*****************/
 body {
-    background-color: gray;
+    background-color: rgb(123, 7, 201);
     position: relative;
     margin: 0;
 }
@@ -22,7 +22,18 @@ body {
     position: absolute;
     display: inline-block;
 }
-
+.nav {
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(146, 61, 224);
+}
+nav-item {
+    display: inline-block;
+}
+.profile-pic {
+    height: 100px;
+}
 
 /****************    ids    ******************/
 #c {
