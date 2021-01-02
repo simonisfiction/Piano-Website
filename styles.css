@@ -3,8 +3,26 @@ body {
     background-color: rgb(123, 7, 201);
     position: relative;
     margin: 0;
+    padding: 0;
 }
-
+ul {
+    width: auto;
+    float: right;
+    margin-top: 8px;
+}
+li {
+    display: inline-block;
+    padding: 20px 20px 8px;
+}
+a {
+    text-decoration: none;
+    color:rgb(208, 158, 255);
+    font-size: 2rem;
+    text-align: center;
+}
+a:hover {
+    color:rgb(80, 2, 133);
+}
 
 
 /**************** classes ******************/
@@ -22,7 +40,7 @@ body {
     position: absolute;
     display: inline-block;
 }
-.nav {
+.navbar {
     margin: 0;
     height: 100px;
     width: 100%;
@@ -30,6 +48,7 @@ body {
 }
 nav-item {
     display: inline-block;
+    position: absolute;
 }
 .profile-pic {
     height: 100px;
