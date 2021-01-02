@@ -1,2 +1,2 @@
 # Piano-Website
-A website that has an interactive piano
+An interactive piano website
