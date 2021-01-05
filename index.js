@@ -1,16 +1,25 @@
 var keys = [];
 keys = document.querySelectorAll(".key");
 
+
+// creates event listeners on all buttons that will trigger a key 
+// animation and a sound file(.ogg) with the correct note during 
+// a "click" event.
 for(var i = 0; i < keys.length; i++){
-    keys[i].addEventListener("click", handleClick);
+    keys[i].addEventListener("click", function (){
+        var keyName = this.innerHTML;
+        chooseNoteByClick(keyName);
+        animateKeys(keyName, false);
+    });
 }
 
-function handleClick(){
-    var keyName = this.innerHTML;
-    chooseNoteByClick(keyName);
-    animateKeys(keyName, false);
-}
+// creates an event listener that will trigger a key animation and a
+// sound file(.ogg) with the correct note during a "click" event.
 
+
+
+// creates an event listener that will trigger a key animation and a
+// sound file(.ogg) with the correct note during a "keydown" event.
 document.addEventListener("keydown", function(event) {
     chooseNote(event.key);
     animateKeys(event.key, true);
@@ -18,13 +27,20 @@ document.addEventListener("keydown", function(event) {
 })
 
 
-
-function animateKeysOnClick(currentKey, keydown){
+// this function takes care of anumating the keys whether the user clicks 
+// on the key, or triggers the key with the their keyboard.
+function animateKeys(currentKey, keydown){
+    // checks whether or not this function is being called as a result
+    // of a "keydown" event, or a click. if a "keydown" event is true,
+    // then the currentKey value needs to be translated into a note.
     if(keydown){
         currentKey = translateKeyDown(currentKey);
     }
     var keyClass = document.querySelector("#" + currentKey);
     var blackKey = false;
+
+    // decides what class name will be added to the currentKey button
+    // based on 
     for(var i = 0; i < keyClass.classList.length; i++){
         if(keyClass.classList[i].includes("black")){
             blackKey = true;
@@ -37,6 +53,9 @@ function animateKeysOnClick(currentKey, keydown){
     }
 }
 
+
+// this is a general function that will add a class with the same name as the "color"
+// string that is passed into the function.
 function addColorClass(keyClass, color){
     keyClass.classList.add(color + "-pressed");
         setTimeout( function() {
@@ -44,6 +63,9 @@ function addColorClass(keyClass, color){
         }, 200);
 }
 
+
+//Translates the "keydown" event's key value into the button id of the
+//correct note
 function translateKeyDown(currentKey){
     switch(currentKey){
         case "z":
@@ -76,6 +98,8 @@ function translateKeyDown(currentKey){
     }
 }
 
+// searches for the correct sound file(.ogg) based on the current key, then
+// plays that sound file during a "keydown" event.
 function chooseNote(key){
     switch(key){
         case "z":
@@ -131,6 +155,8 @@ function chooseNote(key){
     }
 }
 
+// searches for the correct sound file(.ogg) based on the current key, then
+// plays that sound file during a "click" event.
 function chooseNoteByClick(key){
     switch(key){
         case "c":
