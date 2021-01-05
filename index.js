@@ -33,6 +33,7 @@ function animateKeys(currentKey, keydown){
     // checks whether or not this function is being called as a result
     // of a "keydown" event, or a click. if a "keydown" event is true,
     // then the currentKey value needs to be translated into a note.
+    currentKey = translateSharpToS(currentKey);
     if(keydown){
         currentKey = translateKeyDown(currentKey);
     }
@@ -63,6 +64,18 @@ function addColorClass(keyClass, color){
         }, 200);
 }
 
+function translateSharpToS(key) {
+    if(key.length === 2 && key[1] !== "3"){
+        return key [0] + "s";
+    }
+    if(key.length === 3){
+        return key[0] + "s" + "3";
+    } else {
+        return key;
+    }
+}
+
+
 
 //Translates the "keydown" event's key value into the button id of the
 //correct note
@@ -71,49 +84,49 @@ function translateKeyDown(currentKey){
         case "z":
             return "c";
         case "s":
-            return "cs";
+            return "c#";
         case "x":
             return "d";
         case "d":
-            return "ds";
+            return "d#";
         case "c":
             return "e";
         case "v":
             return "f";
         case "g":
-            return "fs";
+            return "f#";
         case "b":
             return "g";
         case "h":
-            return "gs";
+            return "g#";
         case "n":
             return "a";
         case "j":
-            return "as";
+            return "a#";
         case "m":
             return "b";
         case "q":
             return "c3";
         case "2":
-            return "cs3";
+            return "c#3";
         case "w":
             return "d3";
         case "3":
-            return "ds3";
+            return "d#3";
         case "e":
             return "e3";
         case "r":
             return "f3";
         case "5":
-            return "fs3";
+            return "f#3";
         case "t":
             return "g3";
         case "6":
-            return "gs3";
+            return "g#3";
         case "y":
             return "a3";
         case "7":
-            return "as3";
+            return "a#3";
         case "u":
             return "b3";
         default:
@@ -232,13 +245,7 @@ function chooseNote(key){
 // searches for the correct sound file(.ogg) based on the current key, then
 // plays that sound file during a "click" event.
 function chooseNoteByClick(key){
-    if(key.length === 2){
-        key = key[0] + "s";
-    }
-    if(key.length === 3){
-        alert(key);
-        key = key[0] + "s" + "3";
-    }
+    key = translateSharpToS(key);
     switch(key){
         case "c":
             var c = new Audio("sounds/c2sound.ogg");
