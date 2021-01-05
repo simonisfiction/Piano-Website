@@ -1,7 +1,7 @@
 /**************** normal tags*****************/
 body {
     background-color: rgb(123, 7, 201);
-    position: relative;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -30,15 +30,21 @@ a:hover {
     background-color: white;
     height: 400px;
     width: 50px;
+    top: 10px;
+    padding-top: 300px;
 }
 .black {
     background-color: black;
+    color: white;
     height: 250px;
     width: 35px;
+    top: 10px;
+    padding-top: 140px;
 }
 .key {
     position: absolute;
     display: inline-block;
+    font-size: 20px;
 }
 .navbar {
     margin: 0;
@@ -59,48 +65,95 @@ nav-item {
 .black-pressed {
     background-color: rgb(90, 90, 90);
 }
+.octave {
+    font-size: 0px;
+}
 /****************    ids    ******************/
 #keyboard {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 420px;
+    width: 785px;
     background-color: black;
     
 }
 #c {
-    left: 0;
+    left: 10px
 }
 #d {
-    left: 55px;
+    left: 65px;
 }
 #e {
-    left: 110px;
+    left: 120px;
 }
 #f {
-    left: 165px;
+    left: 175px;
 } 
 #g {
-    left: 220px;
+    left: 230px;
 }
 #a {
-    left: 275px;
+    left: 285px;
 }
 #b {
-    left: 330px;
+    left: 340px;
+}
+
+#c3 {
+    left: 395px
+}
+#d3{
+    left: 450px;
+}
+#e3 {
+    left: 505px;
+}
+#f3 {
+    left: 560px;
+} 
+#g3 {
+    left: 615px;
+}
+#a3 {
+    left: 670px;
+}
+#b3 {
+    left: 725px;
 }
 
      
 
 /*************** black keys ***************/
 #cs {
-    left: 35;
+    left: 40px;
 }
 #ds {
-    left: 88px;
+    left: 98px;
 }
 #fs {
-    left: 198px;
+    left: 205px;
 }
 #gs {
-    left: 253px;
+    left: 263px;
 }
 #as {
-    left: 308px;
+    left: 320px;
+}
+
+#cs3 {
+    left: 435px;
+}
+#ds3 {
+    left: 483px;
+}
+#fs3 {
+    left: 590px;
+}
+#gs3 {
+    left: 648px;
+}
+#as3 {
+    left: 705px;
 }
