@@ -119,7 +119,7 @@ function translateKeyDown(currentKey){
         default:
 
             console.log("a key was pressed");
-            return currentKey;
+            return "random key";
     }
 }
 
