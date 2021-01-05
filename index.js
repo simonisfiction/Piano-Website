@@ -27,7 +27,7 @@ document.addEventListener("keydown", function(event) {
 })
 
 
-// this function takes care of anumating the keys whether the user clicks 
+// this function takes care of animating the keys whether the user clicks 
 // on the key, or triggers the key with the their keyboard.
 function animateKeys(currentKey, keydown){
     // checks whether or not this function is being called as a result
@@ -40,7 +40,7 @@ function animateKeys(currentKey, keydown){
     var blackKey = false;
 
     // decides what class name will be added to the currentKey button
-    // based on 
+    // based on whether it has the black or white class.
     for(var i = 0; i < keyClass.classList.length; i++){
         if(keyClass.classList[i].includes("black")){
             blackKey = true;
