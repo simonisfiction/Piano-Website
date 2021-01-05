@@ -18,7 +18,11 @@ document.addEventListener("keydown", function(event) {
 })
 
 
-function animateKeys(currentKey){
+function animateKeysOnKeydown(currentKey){
+    
+}
+
+function animateKeysOnClick(currentKey){
     var keyClass = document.querySelector("#" + currentKey);
     var blackKey = false;
     for(var i = 0; i < keyClass.classList.length; i++){
@@ -27,16 +31,17 @@ function animateKeys(currentKey){
         }
     }
     if(blackKey){
-        keyClass.classList.add("black-pressed");
-        setTimeout( function() {
-            keyClass.classList.remove("black-pressed");
-        }, 200);
+        addColorClass(keyClass, "black");
     } else {
-        keyClass.classList.add("white-pressed");
-        setTimeout( function() {
-            keyClass.classList.remove("white-pressed");
-        }, 200);
+        addColorClass(keyClass, "white");
     }
+}
+
+function addColorClass(keyClass, color){
+    keyClass.classList.add(color + "-pressed");
+        setTimeout( function() {
+            keyClass.classList.remove(color + "-pressed");
+        }, 200);
 }
 
 
