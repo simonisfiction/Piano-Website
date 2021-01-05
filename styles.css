@@ -69,7 +69,7 @@ nav-item {
     margin-right: auto;
     position: relative;
     height: 420px;
-    width: 400px;
+    width: 785px;
     background-color: black;
     
 }
@@ -95,6 +95,28 @@ nav-item {
     left: 340px;
 }
 
+#c3 {
+    left: 395px
+}
+#d3{
+    left: 450px;
+}
+#e3 {
+    left: 505px;
+}
+#f3 {
+    left: 560px;
+} 
+#g3 {
+    left: 615px;
+}
+#a3 {
+    left: 670px;
+}
+#b3 {
+    left: 725px;
+}
+
      
 
 /*************** black keys ***************/
@@ -112,4 +134,20 @@ nav-item {
 }
 #as {
     left: 320px;
+}
+
+#cs3 {
+    left: 435px;
+}
+#ds3 {
+    left: 483px;
+}
+#fs3 {
+    left: 590px;
+}
+#gs3 {
+    left: 648px;
+}
+#as3 {
+    left: 705px;
 }

@@ -92,7 +92,32 @@ function translateKeyDown(currentKey){
             return "as";
         case "m":
             return "b";
+        case "q":
+            return "c3";
+        case "2":
+            return "cs3";
+        case "w":
+            return "d3";
+        case "3":
+            return "ds3";
+        case "e":
+            return "e3";
+        case "r":
+            return "f3";
+        case "5":
+            return "fs3";
+        case "t":
+            return "g3";
+        case "6":
+            return "gs3";
+        case "y":
+            return "a3";
+        case "7":
+            return "as3";
+        case "u":
+            return "b3";
         default:
+
             console.log("a key was pressed");
             return currentKey;
     }
@@ -148,6 +173,55 @@ function chooseNote(key){
             break;
         case "m":
             var b = new Audio("sounds/b3sound.ogg");
+            b.play();
+            break;
+
+        case "q":
+            var c = new Audio("sounds/c3sound.ogg");
+            c.play();
+            break;
+        case "2":
+            var cs = new Audio("sounds/cs3sound.ogg");
+            cs.play();
+            break;
+        case "w":
+            var d = new Audio("sounds/d3sound.ogg");
+            d.play();
+            break;
+        case "3":
+            var ds = new Audio("sounds/ds3sound.ogg");
+            ds.play();
+            break;
+        case "e":
+            var e = new Audio("sounds/e3sound.ogg");
+            e.play();
+            break;
+        case "r":
+            var f = new Audio("sounds/f3sound.ogg");
+            f.play();
+            break;
+        case "5":
+            var fs = new Audio("sounds/fs3sound.ogg");
+            fs.play();
+            break;
+        case "t":
+            var g = new Audio("sounds/g3sound.ogg");
+            g.play();
+            break;
+        case "6":
+            var gs = new Audio("sounds/gs3sound.ogg");
+            gs.play();
+            break;
+        case "y":
+            var a = new Audio("sounds/a4sound.ogg");
+            a.play();
+            break;
+        case "7":
+            var as = new Audio("sounds/as4sound.ogg");
+            as.play();
+            break;
+        case "u":
+            var b = new Audio("sounds/b4sound.ogg");
             b.play();
             break;
         default:
