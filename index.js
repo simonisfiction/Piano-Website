@@ -8,21 +8,21 @@ for(var i = 0; i < keys.length; i++){
 function handleClick(){
     var keyName = this.innerHTML;
     chooseNoteByClick(keyName);
-    animateKeys(keyName);
+    animateKeys(keyName, false);
 }
 
 document.addEventListener("keydown", function(event) {
     chooseNote(event.key);
-    animateKeys(event.key);
+    animateKeys(event.key, true);
     
 })
 
 
-function animateKeysOnKeydown(currentKey){
-    
-}
 
-function animateKeysOnClick(currentKey){
+function animateKeysOnClick(currentKey, keydown){
+    if(keydown){
+        currentKey = translateKeyDown(currentKey);
+    }
     var keyClass = document.querySelector("#" + currentKey);
     var blackKey = false;
     for(var i = 0; i < keyClass.classList.length; i++){
@@ -44,6 +44,37 @@ function addColorClass(keyClass, color){
         }, 200);
 }
 
+function translateKeyDown(currentKey){
+    switch(currentKey){
+        case "z":
+            return "c";
+        case "s":
+            return "cs";
+        case "x":
+            return "d";
+        case "d":
+            return "ds";
+        case "c":
+            return "e";
+        case "v":
+            return "f";
+        case "g":
+            return "fs";
+        case "b":
+            return "g";
+        case "h":
+            return "gs";
+        case "n":
+            return "a";
+        case "j":
+            return "as";
+        case "m":
+            return "b";
+        default:
+            console.log("a key was pressed");
+            return currentKey;
+    }
+}
 
 function chooseNote(key){
     switch(key){
