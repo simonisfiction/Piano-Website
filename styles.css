@@ -31,17 +31,20 @@ a:hover {
     height: 400px;
     width: 50px;
     top: 10px;
+    padding-top: 300px;
 }
 .black {
     background-color: black;
+    color: white;
     height: 250px;
     width: 35px;
     top: 10px;
+    padding-top: 140px;
 }
 .key {
     position: absolute;
     display: inline-block;
-    font-size: 0px;
+    font-size: 20px;
 }
 .navbar {
     margin: 0;
@@ -61,6 +64,9 @@ nav-item {
 }
 .black-pressed {
     background-color: rgb(90, 90, 90);
+}
+.octave {
+    font-size: 0px;
 }
 /****************    ids    ******************/
 #keyboard {

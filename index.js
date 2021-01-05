@@ -7,7 +7,7 @@ keys = document.querySelectorAll(".key");
 // a "click" event.
 for(var i = 0; i < keys.length; i++){
     keys[i].addEventListener("click", function (){
-        var keyName = this.innerHTML;
+        var keyName = this.textContent;
         chooseNoteByClick(keyName);
         animateKeys(keyName, false);
     });
@@ -232,6 +232,13 @@ function chooseNote(key){
 // searches for the correct sound file(.ogg) based on the current key, then
 // plays that sound file during a "click" event.
 function chooseNoteByClick(key){
+    if(key.length === 2){
+        key = key[0] + "s";
+    }
+    if(key.length === 3){
+        alert(key);
+        key = key[0] + "s" + "3";
+    }
     switch(key){
         case "c":
             var c = new Audio("sounds/c2sound.ogg");
@@ -279,6 +286,55 @@ function chooseNoteByClick(key){
             break;
         case "b":
             var b = new Audio("sounds/b3sound.ogg");
+            b.play();
+            break;
+
+        case "c3":
+            var c = new Audio("sounds/c3sound.ogg");
+            c.play();
+            break;
+        case "cs3":
+            var cs = new Audio("sounds/cs3sound.ogg");
+            cs.play();
+            break;
+        case "d3":
+            var d = new Audio("sounds/d3sound.ogg");
+            d.play();
+            break;
+        case "ds3":
+            var ds = new Audio("sounds/ds3sound.ogg");
+            ds.play();
+            break;
+        case "e3":
+            var e = new Audio("sounds/e3sound.ogg");
+            e.play();
+            break;
+        case "f3":
+            var f = new Audio("sounds/f3sound.ogg");
+            f.play();
+            break;
+        case "fs3":
+            var fs = new Audio("sounds/fs3sound.ogg");
+            fs.play();
+            break;
+        case "g3":
+            var g = new Audio("sounds/g3sound.ogg");
+            g.play();
+            break;
+        case "gs3":
+            var gs = new Audio("sounds/gs3sound.ogg");
+            gs.play();
+            break;
+        case "a3":
+            var a = new Audio("sounds/a4sound.ogg");
+            a.play();
+            break;
+        case "as3":
+            var as = new Audio("sounds/as4sound.ogg");
+            as.play();
+            break;
+        case "b3":
+            var b = new Audio("sounds/b4sound.ogg");
             b.play();
             break;
         default:
