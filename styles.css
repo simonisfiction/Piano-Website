@@ -1,7 +1,7 @@
 /**************** normal tags*****************/
 body {
     background-color: rgb(123, 7, 201);
-    position: relative;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -30,11 +30,13 @@ a:hover {
     background-color: white;
     height: 400px;
     width: 50px;
+    top: 10px;
 }
 .black {
     background-color: black;
     height: 250px;
     width: 35px;
+    top: 10px;
 }
 .key {
     position: absolute;
@@ -61,46 +63,49 @@ nav-item {
 }
 /****************    ids    ******************/
 #keyboard {
+    position: relative;
+    height: 420px;
+    width: 400px;
     background-color: black;
-    
+    text-align: center;
 }
 #c {
-    left: 0;
+    left: 10px
 }
 #d {
-    left: 55px;
+    left: 65px;
 }
 #e {
-    left: 110px;
+    left: 120px;
 }
 #f {
-    left: 165px;
+    left: 175px;
 } 
 #g {
-    left: 220px;
+    left: 230px;
 }
 #a {
-    left: 275px;
+    left: 285px;
 }
 #b {
-    left: 330px;
+    left: 340px;
 }
 
      
 
 /*************** black keys ***************/
 #cs {
-    left: 35;
+    left: 40px;
 }
 #ds {
-    left: 88px;
+    left: 98px;
 }
 #fs {
-    left: 198px;
+    left: 205px;
 }
 #gs {
-    left: 253px;
+    left: 263px;
 }
 #as {
-    left: 308px;
+    left: 320px;
 }
