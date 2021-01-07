@@ -1,6 +1,6 @@
 /**************** normal tags*****************/
 body {
-    background-color: rgb(123, 7, 201);
+    background-color: rgb(68, 35, 129);
     text-align: center;
     margin: 0;
     padding: 0;
@@ -16,18 +16,18 @@ li {
 }
 a {
     text-decoration: none;
-    color:rgb(208, 158, 255);
+    color:rgb(173, 158, 255);
     font-size: 2rem;
     text-align: center;
 }
 a:hover {
-    color:rgb(80, 2, 133);
+    color:rgb(105, 36, 233);
 }
 
 
 /**************** classes ******************/
 .white {
-    background-color: white;
+    background-color: rgb(255, 246, 234);
     height: 400px;
     width: 50px;
     top: 10px;
@@ -50,7 +50,7 @@ a:hover {
     margin: 0;
     height: 100px;
     width: 100%;
-    background-color: rgb(146, 61, 224);
+    background-color: rgb(50, 26, 88);
 }
 nav-item {
     display: inline-block;
@@ -70,7 +70,7 @@ nav-item {
 }
 
 .footer {
-    background-color: rgb(146, 61, 224);
+    background-color: rgb(50, 26, 88);
     width: 100%;
     height: 100px;
     text-align: center;
