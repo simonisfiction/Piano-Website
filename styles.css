@@ -7,8 +7,7 @@ body {
 }
 ul {
     width: auto;
-    float: right;
-    margin-top: 8px;
+    margin-top: 0px;
 }
 li {
     display: inline-block;
@@ -24,7 +23,7 @@ a:hover {
     color:rgb(105, 36, 233);
 }
 svg {
-    height: 3rem;
+    height: 2.5rem;
     color:rgb(173, 158, 255);
 }
 
@@ -59,6 +58,9 @@ nav-item {
     display: inline-block;
     position: absolute;
 }
+.nav-bar-list {
+    float: right;
+}
 .profile-pic {
     height: 100px;
 }
@@ -76,7 +78,7 @@ nav-item {
     background-color: rgb(50, 26, 88);
     width: 100%;
     height: 100px;
-    text-align: center;
+    align-content: center;
     position: relative;
 }
 .footer-line {
@@ -87,6 +89,10 @@ nav-item {
     top: 15px;
     bottom: 10px;
     text-align: center;
+    align-content: center;
+}
+.footer-list {
+    float: center;
 }
 
 
