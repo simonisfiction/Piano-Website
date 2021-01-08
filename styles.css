@@ -23,7 +23,10 @@ a {
 a:hover {
     color:rgb(105, 36, 233);
 }
-
+svg {
+    height: 3rem;
+    color:rgb(173, 158, 255);
+}
 
 /**************** classes ******************/
 .white {
@@ -73,6 +76,16 @@ nav-item {
     background-color: rgb(50, 26, 88);
     width: 100%;
     height: 100px;
+    text-align: center;
+    position: relative;
+}
+.footer-line {
+    background-color: rgb(173, 158, 255);
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 15px;
+    bottom: 10px;
     text-align: center;
 }
 
