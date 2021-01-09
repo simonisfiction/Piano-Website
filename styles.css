@@ -5,6 +5,11 @@ body {
     margin: 0;
     padding: 0;
 }
+button {
+    
+}
+
+
 ul {
     width: auto;
     margin-top: 0px;
@@ -34,6 +39,23 @@ svg {
     width: 50px;
     top: 10px;
     padding-top: 300px;
+    opacity: 0;
+    animation-name: fade-in-white-keys;
+    animation-duration: 400ms;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+}
+@keyframes  fade-in-white-keys{
+    0% {
+        opacity: 0%;
+        width: 0px;
+        height: 0px;
+    }
+    100% {
+        opacity: 100%;
+        width: 50px;
+        height: 400px;
+    }
 }
 .black {
     background-color: black;
@@ -42,6 +64,25 @@ svg {
     width: 35px;
     top: 10px;
     padding-top: 140px;
+    opacity: 0;
+    animation-name: fade-in-black-keys;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes  fade-in-black-keys{
+    0% {
+        opacity: 0%;
+        width: 0px;
+        height: 0px;
+    }
+    100% {
+        opacity: 100%;
+        width: 35px;
+        height: 250px
+    }
 }
 .key {
     position: absolute;
@@ -155,7 +196,7 @@ nav-item {
 
 /*************** black keys ***************/
 #cs {
-    left: 40px;
+    left: 45px;
 }
 #ds {
     left: 98px;
@@ -171,7 +212,7 @@ nav-item {
 }
 
 #cs3 {
-    left: 435px;
+    left: 430px;
 }
 #ds3 {
     left: 483px;
